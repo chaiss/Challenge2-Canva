@@ -1,11 +1,12 @@
-# WidgetApp Article (Draft)
+# WidgetApp's Streaming API Article (Draft)
 
-Anonymous Ltd. has developed a new Streaming API (also known as HTTP Push) that lets you
-design **Things**. 
+Developed by **Anonymous Ltd.**, **WidgetApp** is a web-based software system that lets 
+you design Things. This article will cover what I've learned from their Engineering team 
+about their new Streaming API.
 
 ## Overview 
 
-Users scroll through the homepage of WidgetApp, and then selects a **Thing**.
+Users scroll through the homepage of **WidgetApp**, and then selects a Thing to design.
 Once selected, they can start working on it using the editor. Most actions of the editor
 work by calling AJAX (Asynchronous JavaScript and XML) endpoints, allowing updates without
 having to reload the web page. 
@@ -13,7 +14,7 @@ having to reload the web page.
 ## Streaming frontend (SFE)
 
 Because this API is streaming over WebSocket, exposing real-time data, multiple users
-can simultaneously work on the same **Thing**. It's important that any changes made are 
+can simultaneously work on the same Thing design. It's important that any changes made are 
 quickly communicated so that they can be seen by all clients. 
 
 ## Connection details
@@ -37,15 +38,15 @@ Streaming frontend:
 3. Splits the stream by the service.
 4. Connects them to the corresponding services. 
 
-# How I approached creating this article from my notes
+# How I approached creating this article
 
 Firstly, for this article, I thought about the order of content that the reader would be 
-able to learn more about the new Streaming API. I believe an overview, describing what it 
-is and why or how it's used is important to start out with. I did some research on how 
-Streaming APIs and WebSocket works in order to effectively communicate details about 
-connection. I'm assuming that a building WebSocket API from scratch was not necessary and
-describing how this is done is already known by the audience being familiar with 
-WidgetApps other APIs. 
+able to learn more about the new Streaming API. I believe an overview, describing why or 
+how it's used is important to start out with. I did some research on Streaming APIs and 
+how WebSocket works in order to effectively communicate details about connection. For 
+this article, I'm assuming that a building WebSocket API from scratch was not necessary,
+and describing how this is done is already known by the audience being familiar with 
+WidgetApps other APIs.
 
 ## Questions and missing details to complete the Article
 
