@@ -8,8 +8,9 @@ about their new Streaming API.
 
 Streaming APIs are used to examine data in real-time for users to gather up-to-date
 information and accurate results through the web. 
-In **WidgetApp**, users can scroll through the homepage and then select a Thing to design.
-Once selected, they can start working on it using the editor. 
+With the new Streaming API, users can scroll through the homepage of **WidgetApp** and 
+then select a Thing to design. Once selected, they can start working on it using the 
+editor. 
 
 Most actions of the editor work by calling AJAX (Asynchronous JavaScript and XML)
 endpoints, allowing updates without having to reload the web page. 
@@ -47,11 +48,11 @@ Firstly, for this article, I thought about the order of content that the reader 
 able to learn more about the new Streaming API. I believe an overview, describing why or 
 how it's used is important to start out with. I did some research on Streaming APIs and 
 how WebSocket works in order to effectively communicate details about connection. For 
-this article, I'm assuming that a building WebSocket API from scratch was not necessary,
-and describing how this is done is already known by the audience being familiar with 
-WidgetApps other APIs.
+this article, I'm assuming that building a WebSocket API from scratch is not necessary,
+and that describing how this is done is already known by the audience being familiar with 
+WidgetApp's other APIs.
 
-## Questions and missing details to complete the Article
+## Questions and missing details to complete this article
 
 1. It would be helpful to show an example of or available AJAX endpoints. Since users are
    first interacting with the editor, perhaps available editor actions would be useful.
