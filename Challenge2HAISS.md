@@ -1,15 +1,18 @@
 # WidgetApp's Streaming API Article (Draft)
 
-Developed by **Anonymous Ltd.**, **WidgetApp** is a web-based software system that lets 
-you design Things. This article will cover what I've learned from their Engineering team 
+Developed by Anonymous Ltd., **WidgetApp** is a web-based software system that lets 
+you design Things. This article will cover what I've learned from the Engineering team 
 about their new Streaming API.
 
 ## Overview 
 
-Users scroll through the homepage of **WidgetApp**, and then selects a Thing to design.
-Once selected, they can start working on it using the editor. Most actions of the editor
-work by calling AJAX (Asynchronous JavaScript and XML) endpoints, allowing updates without
-having to reload the web page. 
+Streaming APIs are used to examine data in real-time for users to gather up-to-date
+information and accurate results through the web. 
+In **WidgetApp**, users can scroll through the homepage and then select a Thing to design.
+Once selected, they can start working on it using the editor. 
+
+Most actions of the editor work by calling AJAX (Asynchronous JavaScript and XML)
+endpoints, allowing updates without having to reload the web page. 
 
 ## Streaming frontend (SFE)
 
@@ -26,7 +29,7 @@ Authentication is done over a secure WSS protocol and the URL to which to connec
 For example, `wws://www.widgetapp.com/_stream`.
 
 The initial request made by the API goes to [Cloudflare](https://www.cloudflare.com/),
-then routed to the SFE. 
+then routed to the Streaming frontend. 
 
 ### Multiple services on one WebSocket connection
 
