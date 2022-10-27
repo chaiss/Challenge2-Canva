@@ -20,10 +20,11 @@ quickly communicated so that they can be seen by all clients.
 
 In order to communicate using WebSocket, you'll need to create a `WebSocket` object which
 will attempt to open the connection to the server. 
-Authentication is done over a secure WSS protocol and the URL to which to connect is
-wss://www.widgetapp.com/_stream.
+Authentication is done over a secure WSS protocol and the URL to which to connect is 
+`www.widgetapp.com/_stream`. 
+For example, `wws://www.widgetapp.com/_stream`.
 
-The initial request made by the API goes to [Cloudflare] (https://www.cloudflare.com/),
+The initial request made by the API goes to [Cloudflare](https://www.cloudflare.com/),
 then routed to the SFE. 
 
 ### Multiple services on one WebSocket connection
